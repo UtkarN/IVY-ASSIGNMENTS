@@ -1,0 +1,479 @@
+Question_01
+----------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch1, ch2, ch3;
+
+            ch1 = Convert.ToChar(Console.ReadLine());
+            ch2 = Convert.ToChar(Console.ReadLine());
+            ch3 = Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine(ch3+" "+ch2+" "+ch3);
+
+        }
+    }
+}
+------------------------------------------------------
+Question_02
+-------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_02
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double r, a;
+
+            r = Convert.ToDouble(Console.ReadLine());
+
+            double perimeter = 2 * 3.14 * r;
+
+            a = 2 * 3.14 * r * r;
+
+            Console.WriteLine($"Perimeter: {perimeter}");
+            Console.WriteLine($"Area: {a}");
+        }
+    }
+}
+--------------------------------------------------
+Question_03
+--------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double dis, time;
+
+            dis = Convert.ToDouble(Console.ReadLine());// in km
+            time = Convert.ToDouble(Console.ReadLine()); // in hours
+
+            double speed = dis / time;
+
+            Console.WriteLine($"speed in km per hour {speed}");
+            // 1 mile = 1.609 km
+            // 1 km = 1/1.609 mile
+
+            // speed km = speed/1.609 miles;
+            Console.WriteLine($"speed in miles per hour {speed/1.609}");
+
+        }
+    }
+}
+-------------------------------------------------
+Question_04
+-----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_04
+{
+    internal class Program
+    {
+       static bool IsEqual(int x, int y)
+        {
+            if (x % 2 == 0 && y % 2 == 0) return true;
+            return false;
+        }
+        static void Main(string[] args)
+        {
+            int num1, num2;
+
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(IsEqual(num1,num2));
+
+        }
+    }
+}
+-----------------------------------------------------------
+Question_05
+----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_05
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int year = Convert.ToInt32(Console.ReadLine());
+
+            if (year % 400 == 0)
+            {
+                Console.WriteLine($"{year} is leap year");
+            }else if(year % 100 == 0)
+            {
+                Console.WriteLine($"{year} is not a leap year");
+            }else if(year%4 == 0)
+            {
+                Console.WriteLine($"{year} is leap year");
+            }
+            else
+            {
+                Console.WriteLine($"{year} is not a leap year");
+            }
+        }
+    }
+}
+---------------------------------------------------------
+Question_06
+----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] height = new int[10];
+
+            for(int i=0;i<height.Length;i++)
+                height[i] = Convert.ToInt32(Console.ReadLine());
+
+            foreach(int i in height)
+            {
+                if (i < 135) Console.WriteLine("Short");
+                if (i > 180) Console.WriteLine("Tall");
+                if (i > 135 && i < 180) Console.WriteLine("Average");
+            }
+        }
+    }
+}
+------------------------------------------------------
+Question_07
+----------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_07
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int phy, chem, math;
+
+            phy = Convert.ToInt32(Console.ReadLine());
+            chem = Convert.ToInt32(Console.ReadLine());
+            math = Convert.ToInt32(Console.ReadLine());
+
+            if (math >= 65)
+                if (phy >= 55)
+                    if (chem >= 50)
+                        if ((math + phy + chem) >= 180 || (math + phy) >= 140)
+                            Console.WriteLine("The  candidate is eligible for admission");
+                        else
+                            Console.WriteLine("The candidate is not eligible");
+                    else
+                        Console.WriteLine("The candidate is not eligible");
+                else
+                    Console.WriteLine("The candidate is not eligible");
+            else
+                Console.WriteLine("The candidate is not eligible");
+        }
+    }
+}
+-----------------------------------------------------------------
+Question_08
+----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Policy;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_08
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int side1,side2,side3;
+
+            side1 = Convert.ToInt32(Console.ReadLine());
+            side2 = Convert.ToInt32(Console.ReadLine());
+            side3 = Convert.ToInt32(Console.ReadLine());
+
+            if (side1 == side2 && side2 == side3)
+                Console.WriteLine("The Given Triangle is equilateral\n");
+            else if (side1 == side2 || side2 == side3 || side3 == side1)
+                Console.WriteLine("The given Triangle is isosceles\n");
+            else
+                Console.WriteLine("The given Triangle is scalene\n");
+        }
+    }
+}
+--------------------------------------------------------------
+Question_09
+----------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Array;
+
+
+namespace Ques_09
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr1 = new int[] { 1, 2, 3 };
+
+            int[] arr2;
+
+            arr2 = arr1;
+
+           foreach (int i in arr2)
+                Console.Write(i+" ");
+           Console.WriteLine();
+
+
+           // Array.CopyTo(arr2,0);
+             
+        }
+    }
+}
+----------------------------------------------------------------
+Question_10
+-------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr1 = new int[] { 1, 2, 3 };
+
+            int[] arr2 = new int[] { 4, 9, 3 };
+
+            int[] combined = arr1.Concat(arr2).ToArray();
+
+            Array.Sort(combined);
+
+            foreach (int i in combined)
+                Console.Write(i+" ");
+            Console.WriteLine();
+        }
+    }
+}
+------------------------------------------------------
+Question_11
+------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_11
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr1 = { 1, 2, 3,10,8,5,4,2,10};
+
+            int cnt1 = 0, cnt2 = 0;
+
+            foreach(int ele in arr1)
+            {
+                if (ele % 2 == 0) cnt1++;
+                else cnt2++;
+            }
+
+                
+            int len1 = arr1.Length;
+            int[] arr2 = new int[cnt1];
+            int[] arr3 = new int[cnt2];
+
+           int i=0,j=0,k=0;
+
+            while (i < len1)
+            {
+                if (arr1[i]%2==0)
+                {
+                    arr2[j++] = arr1[i++];
+                    
+                }
+                else
+                {
+                    arr3[k++] = arr1[i++];
+                }
+                
+            }
+          
+            foreach(int item in arr2)
+                Console.Write(item + " ");
+            Console.ReadLine();
+
+            foreach (int item in arr3)
+                Console.Write(item + " ");
+            Console.WriteLine();
+        }
+    }
+}
+---------------------------------------------------------------
+Question_12
+------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string str = "This is a ASSignment";
+
+           char[] str2 = str.ToCharArray();
+
+            int len = str.Length;
+
+            for (int c=len-1; c>=0; c--)
+                Console.Write(str2[c]);
+            Console.WriteLine();
+        }
+    }
+}
+------------------------------------------------------------
+Question_13
+------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string str1 = " Utkarsh Nigam";
+
+            int len = str1.Length;
+
+            string str2 = " ";
+            int i = 0;
+            while ( i< len)
+            {
+                if (Char.IsLower(str1[i]))
+                {
+                   str2 = str2 + Char.ToUpper(str1[i]);
+                }else if (Char.IsUpper(str1[i]))
+                {
+                   str2 = str2 + Char.ToLower(str1[i]);
+                }
+                else
+                {
+                    str2 = str2 + " ";
+                }
+                i++;
+            }
+            Console.WriteLine(str2);
+        }
+    }
+}
+-----------------------------------------------------------------
+Question_14
+------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ques_14
+{
+    internal class Program
+    {
+        public static int length_Of_Longest_Substring(String s)
+        {
+            int length = 0;
+            for (int start = 0; start < s.Length; start++)
+            {
+                int i = start;
+                var dictionary = new Dictionary<char, int>();
+
+                while (i < s.Length && !dictionary.ContainsKey(s[i])) 
+                { 
+                    dictionary.Add(s[i++], 1);
+                }
+                if (i - start > length)
+                {
+                    length = i - start;
+                }
+            }
+
+            return length;
+        }
+        static void Main(string[] args)
+        {
+            string str = Console.ReadLine();
+
+            int len = length_Of_Longest_Substring(str);
+
+            Console.WriteLine(len);
+        }
+
+
+    }
+}

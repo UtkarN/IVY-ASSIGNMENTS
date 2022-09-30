@@ -1,0 +1,11 @@
+27/09/2022	Write a git command to add all the new and modified files.
+27/09/2022	Write a git command to commit directly without publishing to the staging environment.
+27/09/2022	Learn what the following git commands do: git init, git clone, git diff, git reset, git rm, git log, git show, git branch
+27/09/2022	Write a git command to remove a particular branch from a local repository. 
+27/09/2022	"Write a C# program to:
+Ask the name of the person, when the person gives an input, create a file with their name. 
+Get other details, like age, place of origin, known languages, etc and write them into the file. 
+Create a directory and have atleast 5 such files in ""People Info"" directory."
+27/09/2022	Write a C# program to copy the contents of one file to another file and move that file to a different location. 
+27/09/2022	In a C# program, open a file from a directory and display the contents on screen. For this program, write atleast 3 specific exceptions and display the appropriate error msg on screen. 
+27/09/2022	In a C# program, open a file from a directory and display the contents on screen. Check whether the file exists, if not throw an error msg. Similarly, check whether the directory exists otherwise throw the error msg on screen.

@@ -1,0 +1,32 @@
+Write a C# Sharp program that takes three letters as input and display them in reverse order.
+
+Write a C# Sharp program that takes the radius of a circle as input and calculate the perimeter and area of the circle.
+
+Write a C# Sharp program that takes distance and time as input and displays the speed in kilometres per hour and miles per hour.
+
+Write a C# Sharp program that takes two numbers as input and returns true or false when both numbers are even or odd.
+
+Write a C# Sharp program to find whether a given year is a leap year or not.
+
+Write a C# Sharp program to accept the height of a person in centimeter and categorize the person according to their height. (Below 135 - short, above 180, tall. In between average)
+
+Write a C# Sharp program to find the eligibility of admission for a professional course based on the following criteria: Marks in Maths >=65
+Marks in Phy >=55
+Marks in Chem>=50
+Total in all three subject >=180
+or
+Total in Math and Subjects >=140
+
+Write a C# program to check whether the triangle is Equilateral, Isosceles or Scalene based on the input sides from the user.
+
+Write a program in C# Sharp to copy the elements one array into another array.
+
+Write a program in C# Sharp to merge two arrays of same size sorted in ascending order.
+
+Write a program in C# Sharp to separate odd and even integers in separate arrays.
+
+Write a program in C# Sharp to print individual characters of the string in reverse order.
+
+Write a program in C# Sharp to read a sentence and replace lowercase characters by uppercase and vice-versa.
+
+Write a C# Sharp program to find the length of the longest substring without repeating characters from a given string.

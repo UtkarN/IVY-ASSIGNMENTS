@@ -1,0 +1,10 @@
+Write a program in C# to catch a FormatException and throw an appropriate error message to the user.
+
+Write a program in C# to perform 3 or 4 arithmetic operations like getting the square root, etc. Also divide a number by zero so that a divide by zero exception gets thrown. Catch the exception and display error messages accordingly.
+
+Write a program in C# where there is a base Order class. Inherit child classes such as Food Orders, Grocery Orders and Clothing Orders etc. Calculate the GST (Goods and Service Taxes) separately with percentages 5, 8 and 10 respectively.
+
+Write a program in C# to create a University Class. Base class can be people, derived classes can be Student, Teacher and Librarian. The student can take a book (from a library) , give attendance, and attend a class. The teacher can take a book (for more
+ days than the student), give and take attendance, and take a class. The librarian can allot a book, give attendance. Create methods that can be overloaded depending on the calling person.
+
+Write a program in C# to create a bank account as an abstract class. Ask the user for his/her aadhar. Call a method to link bank account number with the aadhar number in an abstract method.
